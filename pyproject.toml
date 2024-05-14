@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "lnurlcln"
+version = "0.0.0"
+description = "Corelightning LNURL plugin"
+authors = ["dni <office@dnilabs.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+  {include = "lnurlcln"},
+  {include = "lnurlcln/py.typed"},
+]
+
+[tool.poetry.scripts]
+lnurlcln = "lnurlcln:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+lnurl = "^0.5.1"
+pyln-client = "^24.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
