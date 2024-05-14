@@ -1,4 +1,28 @@
 # Corelightning LNURL plugin
+Support for LNURL Decoding, Paylinks, Withdraw and Auth
+
+## corelightning commands
+```console
+=== lnurl ===
+
+lnurl-decode [lnurl]
+    Decode a LNURL and return the result
+
+lnurl-handle [lnurl]
+    Decode a LNURL and return the LnurlResponse
+
+lnurl-execute [lnurl] [value]
+    LNURL execute a command
+
+lnurl-auth [lnurl] [secret]
+    LNURL Auth
+
+lnurl-pay [lnurl] [amount_msat]
+    LNURL Pay
+
+lnurl-withdraw [lnurl] [bolt11]
+    LNURL Withdraw
+```
 
 ## requirements
 corelightning, python3.10 and poetry
